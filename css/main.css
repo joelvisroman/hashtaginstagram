@@ -1,0 +1,238 @@
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; letter-spacing: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,600,700,400);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+/* GRID INNER */
+
+.grid2 {
+    width: 170px;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+.grid12 {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: top;
+    font-size: 0;
+    text-align: center;
+}
+
+/* GERAL */
+
+body {
+    background-color: #470337;n
+    background-image: linear-gradient(to bottom, #261121, #470337);
+    font-family: 'Open Sans';
+    letter-spacing: 0.1px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Pacifico';
+    font-size: 52px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.notext {
+    text-indent: -99999px;
+}
+
+/* CABEÇALHO */
+
+.top-header {
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.top-header h1 {
+    display: inline-block;
+    margin: 25px 0 10px 0;
+    color: #fff;
+}
+
+.top-header .share {
+    display: inline-block;
+    position: absolute;
+    right: 42px;
+    bottom: 20px;
+}
+
+/* SEÇÕES */
+
+section.grid12 {
+    margin: 20px auto 0 auto;
+}
+
+.section-header {
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+/* INSTAGRAM */
+
+.instagram figure {
+    margin: 10px 10px;
+    overflow: hidden;
+}
+
+.instagram figure img {
+    height: 170px;
+    width: 170px;
+    border: 10px solid #000;
+    cursor: pointer;
+}
+
+.instagram figure figcaption {
+    background: rgba(87, 35, 75, 0.95);
+    color: #fff;
+    position: absolute;
+    padding: 6px 0 0 0;
+    width: 100%;
+    opacity: 0;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    bottom: -10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.instagram figure:hover figcaption {
+    opacity: 1;
+}
+
+.instagram figure:hover:before {
+    opacity: 0;
+}
+
+.instagram figure:hover figcaption {
+    bottom: 0px;
+}
+
+#next-instagram {
+    background: #000;
+    display: block;
+    margin: 20px auto;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#shadow-box {
+    background: rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    display: none;
+    text-align: center;
+}
+
+#autoload {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 100px;
+}
+
+/* RODAPE*/
+
+footer {
+    background: #000;
+    margin-top: 40px;
+}
+
+footer div {
+    padding: 10px;
+    text-align: left!important;
+}
+
+footer p {
+    color: #fff;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+footer p.right {
+    float: right;
+}
+
+footer a {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 630px) {
+    footer p.right {
+        display:none;
+    }
+    footer div {
+        text-align: center!important;
+    }
+}
+/*
+-- Estrutura para imagem
+*/
+
+#fundo-externo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#fundo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#fundo img {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#site {
+	background: #FFF;
+	background: rgba(255,255,255,0.8);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 560px;
+	padding: 20px;
+	margin-left: -300px;
+	margin-top: 20px;
+}
